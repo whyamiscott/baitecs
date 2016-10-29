@@ -1,0 +1,141 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title Байтекс
+		meta(name="description", content="")
+		link(rel="apple-touch-icon", href="/apple-touch-icon.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png" sizes="32x32")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png" sizes="16x16")
+		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic", rel="stylesheet")
+		link(rel="stylesheet", href="/assets/css/main.css")
+	body
+		main(id="main")
+			include ../blocks/header
+			
+			div(class="content-header")
+				div(class="content-header__cover")
+					ul(class="breadcrumbs")
+						li(class="breadcrumbs__item")
+							a(class="button breadcrumbs__link", href="/")
+								span(class="button__text") Главная страница
+						li(class="breadcrumbs__item")
+							a(class="button breadcrumbs__link", href="/production")
+								span(class="button__text") Продукция
+						li(class="breadcrumbs__item")
+							span(class="button button--disabled breadcrumbs__link")
+								span(class="button__text") Колготки и чулки
+				div(class="l_production-nav")
+					ul(class="production-nav")
+						li(class="production-nav__item")
+							span(class="production-nav__link production-nav__link--active", href="/item")
+								div(class="production-nav__icon production-nav__icon--tights")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#tights")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Колготки и чулки
+						li(class="production-nav__item")
+							a(class="production-nav__link", href="/item")
+								div(class="production-nav__icon production-nav__icon--knitwear")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#shirt")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Трикотаж
+						li(class="production-nav__item")
+							a(class="production-nav__link", href="/item")
+								div(class="production-nav__icon production-nav__icon--textile")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#blanket")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Текстиль
+						li(class="production-nav__item")
+							a(class="production-nav__link", href="/item")
+								div(class="production-nav__icon production-nav__icon--underwear")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#underwear")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Белье для детей и взрослых
+						li(class="production-nav__item")
+							a(class="production-nav__link", href="/item")
+								div(class="production-nav__icon production-nav__icon--socks")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#socks")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Чулочно-носочные изделия
+						li(class="production-nav__item")
+							a(class="production-nav__link", href="/item")
+								div(class="production-nav__icon production-nav__icon--terry")
+									svg(class="svg-icon svg-icon--white")
+										use(xlink:href="#bathrobe")
+								div(class="production-nav__title-container")
+									p(class="production-nav__title") Махровые изделия
+
+			div(class="content")
+				h1(class="title title--production title--blue title--left") Колготки и чулки
+				div(class="production")
+					div(class="production__sidebar")
+						a(class="production__cover", href="#")
+							img(class="production__img", src="/assets/resources/images/tights.jpg")
+						button(class="button button--block button--lower-case", id="get-price")
+							span(class="button__text") Скачать прайс-лист
+					div(class="production__content")
+						div(class="text-block text-block--production")
+							p(class="text-block__paragraph")
+								| Пытаясь удовлетворить потребности наших клиентов, мы всегда имеем в наличии большой ассортимент классических и фантазийных колготок итальянских и отечественных производителей, чулок, гольф и носочков. Ассортимент пополнятся еженедельно, заказы формируются с учетом пожеланий клиентов, учитывая смену сезона и следованию последним модным тенденциям.
+							p(class="text-block__paragraph")
+								| Всегда в наличии весь размерный ряд, полный спектр цветов, разная плотность колготок и, конечно, выгодные для Вас цены. Мы хотим чтобы колготки стали главным украшением женских ног.
+						ul(class="brands")
+							li(class="brands__item")
+								span(class="brands__title brands__title--active", rel="stone-island") Stone Island
+								div(class="brands__logo")
+									img(class="brands__logo-img", src="/assets/resources/images/tights.jpg")
+							li(class="brands__item")
+								span(class="brands__title", rel="new-balance") New Balance
+								div(class="brands__logo")
+									img(class="brands__logo-img", src="/assets/resources/images/tights.jpg")
+							li(class="brands__item")
+								span(class="brands__title", rel="adidas") Adidas
+								div(class="brands__logo")
+									img(class="brands__logo-img", src="/assets/resources/images/tights.jpg")
+							li(class="brands__item")
+								span(class="brands__title", rel="nike") Nike
+								div(class="brands__logo")
+									img(class="brands__logo-img", src="/assets/resources/images/tights.jpg")
+						
+						div(class="brands-info")
+							div(class="brands-info__item brands-info__item--active text-block text-block--bordered", id="stone-island")
+								p(class="text-block__paragraph") Stone Island
+							div(class="brands-info__item text-block text-block--bordered", id="new-balance")
+								p(class="text-block__paragraph") New Balance
+							div(class="brands-info__item text-block text-block--bordered", id="adidas")
+								p(class="text-block__paragraph") Adidas
+							div(class="brands-info__item text-block text-block--bordered", id="nike")
+									p(class="text-block__paragraph") Nike
+				
+			div(class="popup-overlay")
+			div(class="popup", id="get-price-popup")
+				div(class="popup__content")
+					form(class="popup__form")
+						div(class="popup__to-hide")
+							h2(class="popup__title") Получить прайс-лист
+							div(class="popup__fields")
+								input(type="text", class="input", placeholder="Имя")
+								input(type="text", class="input", placeholder="Телефон")
+								button(type="submit", class="popup__button button button--lower-case")
+									span(class="button__text") отправить
+					div(class="popup__success")
+						h2(class="popup__title") 
+							| Ваша заявка принята,
+							br
+							| мы свяжемся с Вами
+							br
+							| в ближайшее время
+						a(class="popup__button popup__button--close button button--lower-case", href="#")
+							span(class="button__text") хорошо
+						
+				button(class="popup__close")
+					svg(class="svg-icon svg-icon--white")
+						use(xlink:href="#close")
+						
+			include ../blocks/footer

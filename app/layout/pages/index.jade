@@ -1,0 +1,149 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title Байтекс
+		meta(name="description", content="")
+		link(rel="apple-touch-icon", href="/apple-touch-icon.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png" sizes="32x32")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png" sizes="16x16")
+		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic", rel="stylesheet")
+		link(rel="stylesheet", href="/assets/css/main.css")
+	body
+		main(id="main")
+			include ../blocks/header
+
+			div(class="l_advantages")
+				div(class="advantages")
+					h2(class="title title--b") Оптовая продажа текстиля
+					ul(class="advantages__list")
+						li(class="advantages__item")
+							div(class="advantages__icon advantages__icon--time")
+								svg(class="svg-icon svg-icon--advantage")
+									use(xlink:href="#time")
+							p(class="advantages__text")
+								| Более 16 лет
+								br
+								| на рынке
+						li(class="advantages__item")
+							div(class="advantages__icon advantages__icon--assortment")
+								svg(class="svg-icon svg-icon--advantage")
+									use(xlink:href="#assortiment")
+							p(class="advantages__text")
+								| Огромный ассортимент
+								br
+								| 40 000+ наименований
+						li(class="advantages__item")
+							div(class="advantages__icon advantages__icon--discount")
+								svg(class="svg-icon svg-icon--advantage")
+									use(xlink:href="#discount")
+							p(class="advantages__text")
+								| Выгодная система
+								br
+								| скидок от 12%
+			
+			div(class="girls")
+				h2(class="title title--girls") Наша продукция
+				div(class="girls__content")
+					p(class="girls__text")
+						| Колготки и&nbsp;чулки итальянского и&nbsp;российского производства, нижнее белье для детей и&nbsp;взрослых, носки для детей и&nbsp;взрослых, трикотаж, легкая верхняя одежда головные уборы, постельное белье, столовое белье, махровое белье (халаты, полотенца). За&nbsp;счет хороших партнерских взаимоотношений с&nbsp;производителями наши цены ни&nbsp;сколько не&nbsp;отличаются от&nbsp;цен на&nbsp;заводах.
+
+			ul(class="product-teasers product-teasers--vertical", id="product-teasers")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical", href="/item")
+						div(class="product-teaser__img", style="background: url(/assets/resources/images/tights.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Колготки и чулки
+						p(class="product-teaser__description")
+							| Мы&nbsp;всегда имеем в&nbsp;наличии большой ассортимент колготок Итальянских и&nbsp;отечественных производителей.
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--other")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--tights")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#tights")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical product-teaser__cover--right", href="/item")
+						div(class="product-teaser__img", style="background: url(assets/resources/images/knitwear.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical product-teaser__content--left")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Трикотаж
+						p(class="product-teaser__description")
+							| Мы&nbsp;предлагаем к&nbsp;продаже модные трикотажные изделия от&nbsp;отчественных производителей.
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--left product-teaser__square--blue")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--left product-teaser__icon-container--shirt")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#shirt")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical", href="/item")
+						div(class="product-teaser__img", style="background: url(/assets/resources/images/textile.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Текстиль
+						p(class="product-teaser__description")
+							| Мы&nbsp;реализуем широкий ассортимент столового и&nbsp;постельного белья.
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--light-pink")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--textile")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#blanket")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical product-teaser__cover--right", href="/item")
+						div(class="product-teaser__img", style="background: url(/assets/resources/images/underwear.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical product-teaser__content--left")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Белье для детей и взрослых
+						p(class="product-teaser__description")
+							| Богатый ассортимент, широкая цветовая гамма, всевозможные виды материалов.
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--left product-teaser__square--aqua")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--left product-teaser__icon-container--underwear")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#underwear")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical", href="/item")
+						div(class="product-teaser__img", style="background: url(/assets/resources/images/socks.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Чулочно-носочные изделия
+						p(class="product-teaser__description")
+							| Чулочно-носочный ассортимент представлен тремя основными фабриками-производителями: «Гамма»&nbsp;(г.&nbsp;Орел), Бресткий чулочный комбинат и&nbsp;ОАО&nbsp;«Борисоглебский трикотаж».
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--pink")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--socks")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#socks")
+				li(class="product-teaser product-teaser--vertical")
+					a(class="product-teaser__cover product-teaser__cover--vertical product-teaser__cover--right", href="/item")
+						div(class="product-teaser__img", style="background: url(/assets/resources/images/terry.jpg) center no-repeat; background-size: cover;")
+					div(class="product-teaser__content product-teaser__content--vertical product-teaser__content--left")
+						h3(class="product-teaser__title") 
+							a(class="product-teaser__link", href="#") Махровые изделия
+						p(class="product-teaser__description")
+							| Махровые изделия в&nbsp;нашей компании представлены известной фабрикой «Донецкая мануфактура»
+						a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+							span(class="button__text") Подробнее
+						div(class="product-teaser__square product-teaser__square--left product-teaser__square--light-other")
+						div(class="product-teaser__icon-container product-teaser__icon-container--vertical product-teaser__icon-container--left product-teaser__icon-container--bathrobe")
+							svg(class="svg-icon svg-icon--product-teaser")
+								use(xlink:href="#bathrobe")
+						
+			div(class="about-company-teaser")
+				div(class="about-company-teaser__content")
+					h1(class="title title--blue") Компания «Байтекс»
+					h2(class="sub-title sub-title--about-company-teaser") Оптовая продажа текстиля
+					p(class="about-company-teaser__paragraph")
+						| Компания &laquo;Байтекс&raquo; (ИП&nbsp;Бетина Н.Н.) была создана в&nbsp;январе 2000 года в&nbsp;Иркутске. Главной задачей нашей деятельности является поддержание интересов и&nbsp;ознакомление рядового покупателя с&nbsp;продукцией крупных и&nbsp;мелких фабрик-производителей на&nbsp;рынке России.
+					p(class="about-company-teaser__paragraph")
+						| Постоянные исследования и&nbsp;своевременная реакция на&nbsp;потребности клиентов&nbsp;&mdash; вот что приносит успех нашим партнерам и&nbsp;нам. Прямые поставки и&nbsp;эксклюзивные скидки от&nbsp;производителей дают нам возможность устанавливать цены на&nbsp;уровне отпускных цен...
+					a(class="button button--lower-case", href="/about")
+						span(class="button__text") Читать полностью
+
+			include ../blocks/footer

@@ -1,0 +1,124 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible", content="ie=edge")
+		title Байтекс
+		meta(name="description", content="")
+		link(rel="apple-touch-icon", href="/apple-touch-icon.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png" sizes="32x32")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png" sizes="16x16")
+		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&subset=cyrillic", rel="stylesheet")
+		link(rel="stylesheet", href="/assets/css/main.css")
+	body
+		main(id="main")
+			include ../blocks/header
+			
+			div(class="content-header")
+				div(class="content-header__cover")
+					ul(class="breadcrumbs")
+						li(class="breadcrumbs__item")
+							a(class="button breadcrumbs__link", href="/")
+								span(class="button__text") Главная страница
+							li(class="breadcrumbs__item")
+								span(class="button button--disabled breadcrumbs__link")
+									span(class="button__text") Продукция
+				h1(class="title title--content-header") Наша продукция
+				
+			ul(class="product-teasers product-teasers--tile")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/tights.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Колготки и чулки
+							p(class="product-teaser__description")
+								| Мы&nbsp;всегда имеем в&nbsp;наличии большой ассортимент колготок Итальянских и&nbsp;отечественных производителей.
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--other")
+							div(class="product-teaser__icon-container product-teaser__icon-container--tights")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#tights")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/knitwear.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Трикотаж
+							p(class="product-teaser__description")
+								| Мы&nbsp;предлагаем к&nbsp;продаже модные трикотажные изделия от&nbsp;отчественных производителей.
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--left product-teaser__square--blue")
+							div(class="product-teaser__icon-container product-teaser__icon-container--left product-teaser__icon-container--shirt")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#shirt")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/textile.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Текстиль
+							p(class="product-teaser__description")
+								| Мы&nbsp;реализуем широкий ассортимент столового и&nbsp;постельного белья.
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--pink")
+							div(class="product-teaser__icon-container product-teaser__icon-container--textile")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#blanket")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/underwear.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Белье для детей и взрослых
+							p(class="product-teaser__description")
+								| Богатый ассортимент, широкая цветовая гамма, всевозможные виды материалов.
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--left product-teaser__square--aqua")
+							div(class="product-teaser__icon-container product-teaser__icon-container--left product-teaser__icon-container--underwear")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#underwear")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/socks.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Чулочно-носочные изделия
+							p(class="product-teaser__description")
+								| Чулочно-носочный ассортимент представлен тремя основными фабриками-производителями: «Гамма»&nbsp;(г.&nbsp;Орел), Бресткий чулочный комбинат и&nbsp;ОАО&nbsp;«Борисоглебский трикотаж».
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--pink")
+							div(class="product-teaser__icon-container product-teaser__icon-container--socks")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#socks")
+				li(class="product-teaser-container")
+					div(class="product-teaser")
+						a(class="product-teaser__cover", href="/item")
+							div(class="product-teaser__img", style="background: url(/assets/resources/images/terry.jpg) center no-repeat; background-size: cover;")
+						div(class="product-teaser__content product-teaser__content--tile")
+							h3(class="product-teaser__title") 
+								a(class="product-teaser__link", href="/item") Махровые изделия
+							p(class="product-teaser__description")
+								| Махровые изделия в&nbsp;нашей компании представлены известной фабрикой «Донецкая мануфактура»
+							a(class="button button--lower-case button--has-line product-teaser__more", href="/item")
+								span(class="button__text") Подробнее
+							div(class="product-teaser__square product-teaser__square--left product-teaser__square--light-other")
+							div(class="product-teaser__icon-container product-teaser__icon-container--left product-teaser__icon-container--bathrobe")
+								svg(class="svg-icon svg-icon--product-teaser")
+									use(xlink:href="#bathrobe")
+									
+			div(class="additional-info")
+				p(class="additional-info__paragraph")
+					| Вы&nbsp;можете ознакомиться с&nbsp;большим ассортиментом текстильной продукции, махровых изделий, взрослого и&nbsp;детского трикотажа, чулочно-носочных товаров и&nbsp;колготок итальянского и&nbsp;российского производства, а&nbsp;также коллекции нижнего белья для детей и&nbsp;взрослых от&nbsp;известных брендов. Линейка товаров постоянно обновляется в&nbsp;соответствии с&nbsp;тенденциями и&nbsp;запросами клиентов. Также для Вас можем подобрать в&nbsp;индивидуальном порядке ассортимент товаров для Вашего магазина, обучить персонал определенным навыкам продаж и&nbsp;посоветовать наиболее ходовые модели товаров в&nbsp;том или ином сегменте.
+			
+			include ../blocks/footer

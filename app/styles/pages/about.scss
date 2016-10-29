@@ -1,0 +1,31 @@
+.features {
+	list-style: none;
+	background: map-get($colors, blue);
+	font-size: 0;
+	margin-top: 60px;
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+		padding: 3em 1.25em;
+		@include font-size(20px);
+	}
+
+	&__icon {
+		height: 3.2em;
+
+		&--people,
+		&--car {width: 3.2em}
+		&--discount {width: 2.7em}
+		&--pocket {width: 2.85em}
+	}
+
+	&__text {
+		margin-top: 1.25em;
+		@include font(roboto-slab);
+		line-height: 1.4;
+		text-align: center;
+		color: white;
+	}
+}
